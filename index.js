@@ -11,6 +11,8 @@ function addToList() {
     let getValue = textArea.value;
     if(getValue === "") {
         return false
+    } else if (getValue = " ") {
+        return false;
     }
     let getValueSpace = " " + getValue;
     let addToCart = cart.push(getValueSpace)
@@ -22,7 +24,6 @@ function removeItem() {
     cart.pop();
     show.textContent = cart.toString()
     get.textContent = cart.length;
-    textArea.value = "";
 }
 
 
