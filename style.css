@@ -1,0 +1,6 @@
+.pop {
+    font-size:1rem;
+}
+.pop.active {
+    font-size:2rem;
+}
