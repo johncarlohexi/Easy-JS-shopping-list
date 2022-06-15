@@ -12,8 +12,8 @@ function addToList() {
     if(getValue === "") {
         return false
     }
-    let addToCart = cart.push(getValue)
-    console.log(addToCart)
+    let getValueSpace = getValue + "  ";
+    let addToCart = cart.push(getValueSpace)
     get.textContent = addToCart;
     show.textContent = cart.toString();
 }
