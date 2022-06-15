@@ -16,11 +16,13 @@ function addToList() {
     let addToCart = cart.push(getValueSpace)
     get.textContent = addToCart;
     show.textContent = cart.toString();
+    textArea.value = "";
 }
 function removeItem() {
     cart.pop();
     show.textContent = cart.toString()
     get.textContent = cart.length;
+    textArea.value = "";
 }
 
 
